@@ -4,19 +4,42 @@
  * 					UPPER_TOWER_HEIGHT (adjusts the height of the upper part of the tower)
  * 
  * IN MAIN:
+ * call a steeple function
+ * print a top half
+ * print a line of " marks
+ * print a lower half
+ * print an upper, thinner tower
+ * print a lower, thicker tower
+ * print another top half for the base
+ * print another quote line
+ * 
+ * STEEPLE:
+ * 
  * 
  */
 
 public class ExtraCredit {
 	
+	
+	
 	public static final int STEEPLE_HEIGHT = 4;
+	public static final int UPPER_TOWER_HEIGHT = 20;
+	public static final int TOWER_HEIGHT = 0;
+	//Default values: 4, 4, and 16
 
 	public static void main(String[] args) {
 		steeple();
 		topChunk();
+		quoteLine();
+		lowerChunk();
+		upperTower();
+		mainTower();
+		topChunk();
+		quoteLine();
+		
 	}
 	
-	public static void steeple() {
+	public static void steeple() { // print the steeple at the top
 		for(int i = 1; i <= STEEPLE_HEIGHT; i++) {
 			for(int j = 0; j <= 12; j++) {
 				System.out.print(" ");
@@ -41,8 +64,9 @@ public class ExtraCredit {
 			System.out.println("\\__");
 			
 		}
-		quoteLine();
-		
+	}
+	
+	public static void lowerChunk() {
 		for(int lines = 0; lines < 4; lines++) { // prints the bottom half of the cafe area
 			for(int i = lines * 2; i >= 0; i--) { // increases number of spaces based on what line is being written
 				System.out.print(" ");
@@ -61,6 +85,18 @@ public class ExtraCredit {
 			System.out.print("\"");
 		}
 		System.out.println("|");
+	}
+	
+	public static void upperTower() { // prints the thinner part of the tower
+		for(int i = 1; i <= UPPER_TOWER_HEIGHT; i++) {
+			System.out.println("             ||");
+		}
+	}
+	
+	public static void mainTower() { // prints the thicker part of the tower
+		for(int i = 1; i < TOWER_HEIGHT; i++) {
+			System.out.println("          |%%||%%|");
+		}
 	}
 	
 
