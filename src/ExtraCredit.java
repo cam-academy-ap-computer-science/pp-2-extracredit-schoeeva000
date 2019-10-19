@@ -14,7 +14,24 @@
  * print another quote line
  * 
  * STEEPLE:
+ * Print spaces and than ||
  * 
+ * TOP CHUNK:
+ * Print spaces and a /, and than periods
+ * Print the middle portion, than more periods and a \
+ * 
+ * QUOTE LINE:
+ * Print a line of quotes bounded by | characters
+ * 
+ * LOWER CHUNK:
+ * shorten the following line by 2 each time loop runs:
+ * Print \_ than repeat /\ until the end where _/ is printed
+ * 
+ * UPPER TOWER: 
+ * Same as steeple function but is a different height so needs a different method
+ * 
+ * MAIN TOWER:
+ * Prints the bulk of the tower, |%%||%%| as many times as the class constant specifies
  * 
  */
 
@@ -23,8 +40,8 @@ public class ExtraCredit {
 	
 	
 	public static final int STEEPLE_HEIGHT = 4;
-	public static final int UPPER_TOWER_HEIGHT = 20;
-	public static final int TOWER_HEIGHT = 0;
+	public static final int UPPER_TOWER_HEIGHT = 4;
+	public static final int TOWER_HEIGHT = 16;
 	//Default values: 4, 4, and 16
 
 	public static void main(String[] args) {
