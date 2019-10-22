@@ -1,0 +1,8 @@
+
+Correct Output: 10/10 
+Proper Use of Static Methods: 3/3
+Proper Use of for loops: 3/3
+Pseudocode: 3/3
+Comments: 2/2 
+Consistent Layout and Style following Style Guidelines: 2/2
+Proper Use of at least one Class Constant: 2/2
